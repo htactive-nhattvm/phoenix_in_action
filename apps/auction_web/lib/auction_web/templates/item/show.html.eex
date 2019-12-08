@@ -1,0 +1,6 @@
+<h1><%= link(@item.title, to: Routes.item_path(@conn, :edit, @item))%></h1>
+
+<ul>
+  <li><strong>Description:</strong> <%= @item.description %></li>
+  <li><strong>Auction ends at:</strong> <%= @item.ends_at %></li>
+</ul>
