@@ -23,7 +23,9 @@ defmodule AuctionWeb.Router do
         :index,
         :show,
         :edit,
-        :update
+        :update,
+        :new,
+        :create
       ]
   end
 
