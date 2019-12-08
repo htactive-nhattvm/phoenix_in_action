@@ -27,8 +27,9 @@ defmodule AuctionWeb.Router do
         :new,
         :create
       ]
-  end
 
+    resources "/users", UserController, only: [:show, :new, :create]
+  end
   # Other scopes may use custom stacks.
   # scope "/api", AuctionWeb do
   #   pipe_through :api
